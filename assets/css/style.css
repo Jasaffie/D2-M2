@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(236, 245, 220);
+  font-family: Roboto;
+}
+
+.main_container {
+  display: grid;
+  gap: 5px;
+  height: 100vh;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 2fr 10fr 1fr;
+  grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-image: url(../img/background.png);
+  background-size: 500px;
+}
+
+header h1 {
+  color: rgb(104, 91, 120);
+  font-size: 50px;
+  padding-right: 65px;
+}
+
+.logo {
+  display: flex;
+  justify-content: end;
+  width: 500px;
+}
+
+menu {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: start;
+  color: rgb(104, 91, 120);
+  background-color: rgb(230, 239, 214);
+}
+
+menu h2 {
+  padding: 10px;
+}
+
+menu a {
+  text-decoration: none;
+  color: rgb(104, 91, 120);
+}
+
+.product {
+  display: flex;
+  justify-content: start;
+  width: 170px;
+}
+
+.product-name p {
+  padding-left: 10px;
+}
+
+.product-units p {
+  color: grey;
+  padding-left: 5px;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  row-gap: 6px;
+  justify-items: center;
+  align-items: center;
+  padding: 3px 0px;
+}
+
+main a {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 252, 245);
+  width: 260px;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  width: 260px;
+  height: auto;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 252, 245);
+}
+
+.card-body h4 {
+  margin: 0;
+  text-align: center;
+  color: rgb(104, 91, 120);
+  font-weight: normal;
+  padding-top: 5px;
+}
+
+.card-body p {
+  padding: 5px 0px;
+  color: rgb(104, 91, 120);
+}
+
+.card-footer {
+  display: flex;
+  background-color: rgb(114, 207, 145);
+  justify-content: center;
+  align-items: center;
+}
+
+.card-footer h5 {
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 3px 0px;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 251, 236);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer h3 {
+  color: rgb(104, 91, 120);
+}
